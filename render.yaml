@@ -6,7 +6,7 @@ services:
     startCommand: node server.js
     envVars:
       - key: DATABASE_URL
-        value: postgresql://neondb_owner:npg_lbXRzB2i0hvG@ep-wild-scene-atdwfdew-pooler.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+        value: postgresql://neondb_owner:npg_zaqpUm5G0nyr@ep-royal-leaf-aokwjyxd-pooler.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
       - key: NODE_ENV
         value: production
       - key: JWT_SECRET
