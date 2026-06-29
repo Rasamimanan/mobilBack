@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: suivi-chantier-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://neondb_owner:npg_lbXRzB2i0hvG@ep-wild-scene-atdwfdew-pooler.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        value: suivi_chantier_super_secret_2026_prod
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_SECURE
+        value: "false"

@@ -22,3 +22,5 @@ pool.query('SELECT 1', (err) => {
 pool.on('error', (err) => console.error('❌ Erreur PostgreSQL:', err.message));
 
 module.exports = pool;
+{}
+['bcryptjs', 'cors', 'dotenv', 'express', 'express-validator', 'jsonwebtoken', 'multer', 'nodemailer', 'pg']
